@@ -8,7 +8,7 @@ const Navigation = () => {
       <LinkContainer to="/#"><Navbar.Brand>MindReader</Navbar.Brand></LinkContainer>
       <Nav className="mr-auto">
         <LinkContainer to="/#"><Nav.Link>Home</Nav.Link></LinkContainer>
-        <LinkContainer to="/downloads"><Nav.Link>Downloads</Nav.Link></LinkContainer>
+        <LinkContainer to="/releases"><Nav.Link>Releases</Nav.Link></LinkContainer>
         <LinkContainer to="/statistics"><Nav.Link>Statistics</Nav.Link></LinkContainer>
       </Nav>
     </Navbar>
