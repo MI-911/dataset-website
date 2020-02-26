@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './Navigation';
 import Releases from './pages/Releases';
 import About from './pages/About';
+import Statistics from './pages/Statistics';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,7 +22,7 @@ function App() {
               <Releases />
             </Route>
             <Route path="/statistics">
-              hej
+              <Statistics />
             </Route>
             <Route path="/">
               <About />

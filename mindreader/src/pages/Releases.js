@@ -1,10 +1,12 @@
 import React from 'react';
 import BlankLink from '../components/BlankLink';
+import { Link } from 'react-router-dom';
 
 const Releases = () => {
   return (
     <>
       <h2>Stable releases</h2>
+      <p>Statistics on the latest available release are available <Link to="/statistics">here</Link>.</p>
       <h4>MindReader-100K</h4>
       <p className="small text-muted">Released 2020-02-25</p>
       <p>The latest stable release of MindReader is MindReader-100K with 102,160 ratings from 1,174 users over 10,030 entities.

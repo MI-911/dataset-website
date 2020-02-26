@@ -17,7 +17,7 @@ const About = () => {
       <h4>Releases</h4><hr />
       <p>
         The latest release of MindReader, as well as previous versions, can be found on the <Link to="/releases">Releases</Link> page.
-        We maintain stable releases appropriate for research as well as more recent versions with more ratings.
+        We maintain stable releases appropriate for research as well as a rolling release which is continously updated.
         For all releases, we include the structure of the underlying knowledge graph on which the entities have been rated.
       </p>
 
@@ -64,9 +64,9 @@ const About = () => {
               <td>
                 The rating provided by the user for the specific entity, which can take one of three values:
                 <ul>
-                  <li>-1 if the user disliked the entity</li>
-                  <li>0 if the user stated that they don't know how to rate the entity</li>
-                  <li>1 if the user liked the entity</li>
+                  <li>-1 if the user responded "dislike"</li>
+                  <li>0 if the user responded "don't know"</li>
+                  <li>1 if the user responded "like"</li>
                 </ul>
               </td>
             </tr>
@@ -77,7 +77,7 @@ const About = () => {
       <h4>Experiments</h4><hr />
       <p>
         We provide a framework for partitioning the dataset and performing evaluations on various models on <BlankLink href="https://github.com/MI-911/model-framework">GitHub</BlankLink>.
-        Further instructions on conducting the experiments are available in the repository.
+        Further instructions on partitioning the dataset and conducting the experiments are available in the repository.
       </p>
 
       <h4>Reference</h4><hr />
