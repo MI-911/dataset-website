@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Image} from 'react-bootstrap';
 import StatisticsCol from '../components/StatisticsCol';
 import longTail from '../statistics/long-tail.png';
 import coverage from '../statistics/coverage.png';
 
 function LongTail() {
-  return <img src={longTail} alt="Long-tail distribution" />;
+  return <Image src={longTail} fluid />;
 }
 
 function Coverage() {
-  return <img src={coverage} alt="Entity type coverage" />;
+  return <Image src={coverage} fluid />;
 }
 
 const Statistics = () => {
