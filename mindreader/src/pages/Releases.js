@@ -13,17 +13,17 @@ const Releases = () => {
          We recommend this dataset for use in research, as it will be permanently available on this page.
          Links to download the dataset and associated knowledge graph triples can be found below.</p>
       <ul>
-        <li>Ratings (TBA)</li>
-        <li>Knowledge graph (TBA)</li>
+        <li><BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix">Ratings</BlankLink> (9.1 MB)</li>
+        <li><BlankLink href="https://mindreader.tech/api/triples?versions=100k,100k-never-100k-fix">Knowledge graph triples</BlankLink> (16.0 MB)</li>
       </ul><hr />
 
       <h2>Rolling release</h2>
       <p className="small text-muted">Released just now</p>
       <p>We provide a rolling release based on the latest available data. No statistics are available on this dataset since it changes over time.
-         Links to download the dataset and associated knowledge graph triples can be found below.</p>
+      Links to download the dataset and associated knowledge graph triples can be found below.</p>
       <ul>
         <li><BlankLink href="https://mindreader.tech/api/ratings">Ratings</BlankLink></li>
-        <li><BlankLink href="https://mindreader.tech/api/triples">Triples</BlankLink></li>
+        <li><BlankLink href="https://mindreader.tech/api/triples">Knowledge graph triples</BlankLink></li>
       </ul>
     </>
   );
