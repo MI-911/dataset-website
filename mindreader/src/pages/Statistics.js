@@ -24,7 +24,7 @@ const Statistics = () => {
         <Row>
           <StatisticsCol header="Long-tail distribution">
             <LongTail />
-            <p className="small text-muted">MindReader dataset is limited to binary ratings and items (i.e., movies) for a fair comparison.</p>
+            <p className="small text-muted">MindReader dataset is limited to binary ratings (only likes and dislikes) and items (movies) for a fair comparison.</p>
           </StatisticsCol>
           
           <StatisticsCol header="Entity type coverage">

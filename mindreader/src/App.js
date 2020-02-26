@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navigation from './Navigation';
+import Navigation from './components/Navigation';
 import Releases from './pages/Releases';
 import About from './pages/About';
 import Statistics from './pages/Statistics';
@@ -14,7 +14,7 @@ import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <Router>
+    <Router basename={'/dataset'}>
         <Navigation />
         <Container className="mt-3">
           <Switch>
