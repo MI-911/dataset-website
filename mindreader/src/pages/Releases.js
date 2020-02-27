@@ -26,7 +26,7 @@ const Releases = () => {
       <ul>
         <li><BlankLink href="https://mindreader.tech/api/ratings">Ratings</BlankLink></li>
         <li><BlankLink href="https://mindreader.tech/api/triples">Knowledge graph triples</BlankLink></li>
-        <li><BlankLink href="https://mindreader.tech/api/entities">Knowledge graph entities</BlankLink> (1.2 MB)</li>
+        <li><BlankLink href="https://mindreader.tech/api/entities">Knowledge graph entities</BlankLink></li>
       </ul>
     </>
   );

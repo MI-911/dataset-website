@@ -126,6 +126,36 @@ const About = () => {
       </Table>
       </p>
 
+      <h5>Knowledge graph entities</h5>
+      <hr />
+      <p>
+        The knowledge graph entities file (<code>entities.csv</code>) contains a row for each entity in the knowledge graph. Below we provide an explanation of the two columns.
+      </p>
+      <p>
+      <Table striped bordered hover>
+        <tbody>
+          <tr>
+            <td>
+              <code>uri</code>
+            </td>
+            <td>
+              The URI of the entity, corresponding to a URI from <BlankLink href="https://wikidata.org">Wikidata</BlankLink>.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <code>name</code>
+            </td>
+
+            <td>
+              The name of entity.
+            </td>
+          </tr>
+        </tbody>
+      </Table>
+      </p>
+
       <h4>Experiments</h4><hr />
       <p>
         We provide a framework for partitioning the dataset and performing evaluations on various models on <BlankLink href="https://github.com/MI-911/model-framework">GitHub</BlankLink>.
