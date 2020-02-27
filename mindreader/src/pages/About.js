@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BlankLink from '../components/BlankLink';
 import { Table } from 'react-bootstrap';
+import '../App.css';
 
 const About = () => {
   return (
@@ -13,6 +14,12 @@ const About = () => {
         The dataset is collected from an online movie recommendation game, <BlankLink href="https://mindreader.tech">MindReader</BlankLink>, where users are pseudo-randomly asked to provide preferences for both movie- and non-movie entities (e.g., genres, actors, and directors).
         For each entity, users can either like it, dislike it, or state that they do not know it.
       </p>
+
+      <div className="text-center">
+        <Link to="/releases">
+          <button className="mr-btn mr-btn-lg">Download</button>
+        </Link>
+      </div>
 
       <h4>Releases</h4><hr />
       <p>
