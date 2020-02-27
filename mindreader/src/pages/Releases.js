@@ -14,8 +14,8 @@ const Releases = () => {
          Links to download the dataset and associated knowledge graph triples can be found below.</p>
       <ul>
         <li><BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix">Ratings</BlankLink> (9.1 MB)</li>
-        <li><BlankLink href="https://mindreader.tech/api/triples?versions=100k,100k-never-100k-fix">Knowledge graph triples</BlankLink> (16.0 MB)</li>
-        <li><BlankLink href="https://mindreader.tech/api/entities?versions=100k,100k-never-100k-fix">Knowledge graph entities</BlankLink> (1.2 MB)</li>
+        <li><BlankLink href="https://mindreader.tech/api/triples?versions=100k,100k-newer,100k-fix">Knowledge graph triples</BlankLink> (16.0 MB)</li>
+        <li><BlankLink href="https://mindreader.tech/api/entities?versions=100k,100k-newer,100k-fix">Knowledge graph entities</BlankLink> (1.2 MB)</li>
 
       </ul><hr />
 
