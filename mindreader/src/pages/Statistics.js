@@ -41,108 +41,108 @@ const Statistics = () => {
       <p>      
         Below we present some rudimentary statistics and measures on the knowledge graph used in the latest stable version of MindReader.
       </p>
-      <p>
-      <Table striped bordered hover>
-        <tbody>
-          <tr>
-            <td>
-              <strong>Measure</strong>
-            </td>
-            <td>
-              <strong>Directed</strong>
-            </td>
-            <td>
-              <strong>Undirected</strong>
-            </td>
-          </tr>
+      <Container>
+        <Table striped bordered hover>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Measure</strong>
+              </td>
+              <td>
+                <strong>Directed</strong>
+              </td>
+              <td>
+                <strong>Undirected</strong>
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <code>Num. nodes</code>
-            </td>
-            <td>
-              18,707
-            </td>
-            <td>
-              18,707
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <code>Num. nodes</code>
+              </td>
+              <td>
+                18,707
+              </td>
+              <td>
+                18,707
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <code>Num. edges</code>
-            </td>
-            <td>
-              198,452
-            </td>
-            <td>
-              99,226
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <code>Num. edges</code>
+              </td>
+              <td>
+                198,452
+              </td>
+              <td>
+                99,226
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <code>Min. degree</code>
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              2
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <code>Min. degree</code>
+              </td>
+              <td>
+                4
+              </td>
+              <td>
+                2
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <code>Med. degree</code>
-            </td>
-            <td>
-              10
-            </td>
-            <td>
-              5
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <code>Med. degree</code>
+              </td>
+              <td>
+                10
+              </td>
+              <td>
+                5
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <code>Avg. degree</code>
-            </td>
-            <td>
-              21
-            </td>
-            <td>
-              10
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <code>Avg. degree</code>
+              </td>
+              <td>
+                21
+              </td>
+              <td>
+                10
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <code>Max. degree</code>
-            </td>
-            <td>
-              4,454
-            </td>
-            <td>
-              2,227
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <code>Max. degree</code>
+              </td>
+              <td>
+                4,454
+              </td>
+              <td>
+                2,227
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <code>Num. connected components</code>
-            </td>
-            <td>
-              1
-            </td>
-            <td>
-              1
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <code>Num. connected components</code>
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                1
+              </td>
+            </tr>
 
-        </tbody>
-      </Table>
-      </p>
+          </tbody>
+        </Table>
+      </Container>
     </>
   );
 }

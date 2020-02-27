@@ -8,7 +8,7 @@ const StatisticsCol = (props) => {
           <Card.Header>
             {props.header}
           </Card.Header>
-          <Card.Body style={{'text-align': 'center'}}>
+          <Card.Body style={{'textAlign': 'center'}}>
             {props.children}
           </Card.Body>
         </Card>
