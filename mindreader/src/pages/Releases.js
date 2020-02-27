@@ -15,6 +15,8 @@ const Releases = () => {
       <ul>
         <li><BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix">Ratings</BlankLink> (9.1 MB)</li>
         <li><BlankLink href="https://mindreader.tech/api/triples?versions=100k,100k-never-100k-fix">Knowledge graph triples</BlankLink> (16.0 MB)</li>
+        <li><BlankLink href="https://mindreader.tech/api/entities?versions=100k,100k-never-100k-fix">Knowledge graph entities</BlankLink> (1.2 MB)</li>
+
       </ul><hr />
 
       <h2>Rolling release</h2>
@@ -24,6 +26,7 @@ const Releases = () => {
       <ul>
         <li><BlankLink href="https://mindreader.tech/api/ratings">Ratings</BlankLink></li>
         <li><BlankLink href="https://mindreader.tech/api/triples">Knowledge graph triples</BlankLink></li>
+        <li><BlankLink href="https://mindreader.tech/api/entities">Knowledge graph entities</BlankLink> (1.2 MB)</li>
       </ul>
     </>
   );
