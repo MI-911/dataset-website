@@ -39,9 +39,9 @@ const Statistics = () => {
       <hr />
 
       <p>      
-        Below we present some rudimentary statistics and measures on the knowledge graph used in the latest stable version of MindReader.
+        Below we present some rudimentary statistics and measures on the knowledge graph.
       </p>
-      <Container>
+      <Container className="pb-5">
         <Table striped bordered hover>
           <tbody>
             <tr>
