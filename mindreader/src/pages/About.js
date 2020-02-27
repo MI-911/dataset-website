@@ -22,56 +22,101 @@ const About = () => {
       </p>
 
       <h4>Structure</h4><hr />
+      <p>All dataset files are provided as related CSV files. The structure of each file is described in detail below.</p>
+
+      <h5>Ratings</h5><hr />
       <p>
-        The dataset is provided as a csv file with an entry for each rating. Below we provide an explanation of the different columns.
-        <Table striped bordered hover>
-          <tbody>
-            <tr>
-              <td>
-                userId
-              </td>
-              <td>
-                A unique identifier which anonymously identifies the user responsible for the rating.
-              </td>
-            </tr>
+        The ratings file (<code>ratings.csv</code>) contains a row for each rating tuple. Below we provide an explanation of the four columns.
+      </p>
+      <p>
+      <Table striped bordered hover>
+        <tbody>
+          <tr>
+            <td>
+              <code>userId</code>
+            </td>
+            <td>
+              A unique identifier which anonymously identifies the user responsible for the rating.
+            </td>
+          </tr>
 
-            <tr>
-              <td>
-                uri
-              </td>
+          <tr>
+            <td>
+              <code>uri</code>
+            </td>
 
-              <td>
-                The URI of the rated entity, corresponding to URIs from <BlankLink href="https://wikidata.org">Wikidata</BlankLink>. Currently, decades do not follow this convention, e.g., the decade 2010 is represented as DECADE_2010 instead of <BlankLink href="https://wikidata.org/wiki/Q19022">Q19022</BlankLink>.
-              </td>
-            </tr>
+            <td>
+              The URI of the rated entity, corresponding to URIs from <BlankLink href="https://wikidata.org">Wikidata</BlankLink>. The entity URIs match those in <code>triples.csv</code>. Currently, decades do not follow this convention, e.g., the decade 2010 is represented as DECADE_2010 instead of <BlankLink href="https://wikidata.org/wiki/Q19022">Q19022</BlankLink>.
+            </td>
+          </tr>
 
-            <tr>
-              <td>
-                isItem
-              </td>
+          <tr>
+            <td>
+              <code>isItem</code>
+            </td>
 
-              <td>
-                A boolean indication of whether the rated entity is an item (i.e., movie) or not.
-              </td>
-            </tr>
+            <td>
+              A boolean indication of whether the rated entity is an item (i.e., movie) or not.
+            </td>
+          </tr>
 
 
-            <tr>
-              <td>
-                sentiment
-              </td>
+          <tr>
+            <td>
+              <code>sentiment</code>
+            </td>
 
-              <td>
-                The rating provided by the user for the specific entity, which can take one of three values:
-                <ul>
-                  <li>-1 if the user responded "dislike"</li>
-                  <li>0 if the user responded "don't know"</li>
-                  <li>1 if the user responded "like"</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
+            <td>
+              The rating provided by the user for the specific entity, which can take one of three values:
+              <ul>
+                <li>-1 if the user responded "dislike"</li>
+                <li>0 if the user responded "don't know"</li>
+                <li>1 if the user responded "like"</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </Table>
+      </p>
+
+      <h5>Knowledge graph triples</h5>
+      <hr />
+      <p>
+        The knowledge graph triples file (<code>triples.csv</code>) contains a row for each head-relation-tail triple in the knowledge graph. Below we provide an explanation of the three columns.
+      </p>
+      <p>
+      <Table striped bordered hover>
+        <tbody>
+          <tr>
+            <td>
+              <code>head_uri</code>
+            </td>
+            <td>
+              The URI of the head entity, corresponding to a URI from <BlankLink href="https://wikidata.org">Wikidata</BlankLink>.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <code>relation</code>
+            </td>
+
+            <td>
+              The name of relation connecting the head and tail entity. The relation name does not correspond to a <BlankLink href="https://wikidata.org">Wikidata</BlankLink> URI.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <code>tail_uri</code>
+            </td>
+
+            <td>
+            The URI of the tail entity, corresponding to a URI from <BlankLink href="https://wikidata.org">Wikidata</BlankLink>.
+            </td>
+          </tr>
+        </tbody>
+      </Table>
       </p>
 
       <h4>Experiments</h4><hr />
