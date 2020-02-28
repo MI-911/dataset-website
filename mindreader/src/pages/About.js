@@ -158,7 +158,7 @@ const About = () => {
 
       <h4>Experiments</h4><hr />
       <p>
-        We provide a framework for partitioning the dataset and performing evaluations on various models on <BlankLink href="https://github.com/MI-911/model-framework">GitHub</BlankLink>.
+        We provide a framework for partitioning the dataset and performing evaluations on various models on <BlankLink href="https://github.com/MI-911/warm-start-framework">GitHub</BlankLink>.
         Further instructions on partitioning the dataset and conducting the experiments are available in the repository.
       </p>
 
