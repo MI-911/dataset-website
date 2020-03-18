@@ -16,6 +16,8 @@ const Releases = () => {
         The latest stable release of MindReader is MindReader-100K with 102,160
         ratings from 1,174 users over 10,030 entities. We recommend this dataset
         for use in research, as it will be permanently available on this page.
+        Furthermore, we provide a variant containing only ratings from users who
+        reached the final page of the quiz denoted by 'final only'.
         Links to download the dataset and associated knowledge graph triples can
         be found below.
       </p>
@@ -24,7 +26,13 @@ const Releases = () => {
           <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix">
             Ratings
           </BlankLink>{" "}
-          (9.1 MB)
+          (8,6 MB)
+        </li>
+        <li>
+          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix&final=yes">
+            Ratings (final only)
+          </BlankLink>{" "}
+          (7,6 MB)
         </li>
         <li>
           <BlankLink href="https://mindreader.tech/api/triples?versions=100k,100k-newer,100k-fix">
