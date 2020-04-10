@@ -1,15 +1,26 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 const Navigation = () => {
   return (
     <Navbar className="justify-content-center" bg="primary" variant="dark">
-      <LinkContainer to="/#"><Navbar.Brand>MindReader</Navbar.Brand></LinkContainer>
+      <LinkContainer to="/#">
+        <Navbar.Brand>MindReader</Navbar.Brand>
+      </LinkContainer>
       <Nav className="mr-auto">
-        <LinkContainer to="/#"><Nav.Link>Home</Nav.Link></LinkContainer>
-        <LinkContainer to="/releases"><Nav.Link>Releases</Nav.Link></LinkContainer>
-        <LinkContainer to="/statistics"><Nav.Link>Statistics</Nav.Link></LinkContainer>
+        <LinkContainer to="/#">
+          <Nav.Link>Home</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/releases">
+          <Nav.Link>Releases</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/statistics">
+          <Nav.Link>Statistics</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/neo4j">
+          <Nav.Link>Neo4j</Nav.Link>
+        </LinkContainer>
       </Nav>
     </Navbar>
   );
