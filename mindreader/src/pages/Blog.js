@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import blogPost from "../markdown/Building_a_recommender_with_Neo4j.md";
+import blogPost from "../markdown/Movie_Recommendations_powered_by_Knowledge_Graphs.md";
 import ReactMarkdown from "react-markdown";
 
 import cypher from "highlightjs-cypher";

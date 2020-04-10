@@ -1,4 +1,4 @@
-# Building a recommender with Neo4j
+# Movie Recommendations powered by Knowledge Graphs and Neo4j
 When you visit Netflix, you are met by several lists of movies for you to watch. Some new releases, some popular among other users, and most interestingly, some **Top Picks for You**. Netflix uses a powerful **recommendation system** to generate this list. Based on what you have watched and rated, it builds a profile of your tastes in terms of genres, plots, actors and more, and uses this profile *to recommend movies that fit to your taste*. 
 
 Recommendation systems, or recommenders, are used by a huge number of platforms including Amazon, Netflix, Facebook and many other e-commerce and service provision platforms. Their purpose is simple: recommend the items/movies/people that a specific user will most likely buy/watch/become friends with.
@@ -38,7 +38,7 @@ Intuitively, for implementing a content-based recommender, we should be able to 
 The power of graph databases becomes clear once we start considering connections other than `Movie→HasProperty→Property`. In fact we want to express a much richer model where we represent inter-relations between properties - effectively allowing properties to have properties. This also allows us to explicitly model the nature of each relationship. In this case, the expressiveness of the graph model becomes clearer:
 
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586505362970_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521475168_image.png)
 
 
 ***The above is an example knowledge graph*** representing movies and books as well as actors, genres and the complex interelationships among them. In a knowledge graph, not only do we know what items are related to what properties, we know *how* they are related and impose no restrictions on what can be related and how. 
@@ -53,7 +53,7 @@ To suggest items to users, it is common to deploy very complex machine learning 
 
 The algorithm models a random web-surfer navigating the web by following links between individual web-pages. Web pages are presented as nodes and the connections (the edges) are created when a page contains a link to another page. The PageRank of a given website, i.e., a node in the web-graph, is given by how likely would be a user to end up on a specific web page if browsing the web aimlessly. 
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586504521970_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521317477_image.png)
 
 
 In the graph in the figure, the most important web-page would be Wikipedia, followed by Neo4j and Dev.to, followed by Google and Reddit, and so on. 
@@ -61,7 +61,7 @@ In the graph in the figure, the most important web-page would be Wikipedia, foll
 In the PageRank model, we assume that the random web-surfer can teleport to any page in the entire network at any time. This is analogous to the surfer simply typing in a different URL in the browser instead of following the links on a page. In a variant called **Personalized PageRank**, we limit the target pages the surfer can teleport only to a specific set of graph nodes (this is called the preference set or the *personalized set* because they represent the pages a specific user likes the most). For example, if we “personalize” the PageRanks by only allowing the surfer to teleport to Medium, we get the following rankings: 
 
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586504535372_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521849923_image.png)
 
 
 Note that the random-surfer model makes no requirement for what the graph is modelling. In the end, what we obtain is a ranking of nodes in the graph according to their relevance and importance, regardless of what the nodes represent.
@@ -69,7 +69,7 @@ Note that the random-surfer model makes no requirement for what the graph is mod
 So, we should be able to do something similar with out movie-graph database, right? Yes! 
 The global PageRank of the previous knowledge graph gives us the following rankings:
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586505389437_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521501097_image.png)
 
 
 This would be the rankings we would use to present products to a newly visiting user, yielding a top-three of (1) “I Am Malala”, (2) “Cloud Atlas (movie)”, and (3) “Catch Me If You Can”. As such, we would recommend that the user reads “I Am Malala”. 
@@ -80,14 +80,14 @@ Another quite significant advantage of Personalized PageRank is that we can pers
 
 Running Personalized PageRank over the same graph with “I Am Malala” as the only source node, we get the following rankings:
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586505423955_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521527115_image.png)
 
 
 With that small change, we would now recommend that the user either watches “Catch Me If You Can” or reads “Cloud Atlas (Book)” instead of watching “Cloud Atlas”.
 
 To further demonstrate Personalized PageRank’s ability to adapt to user preferences, let’s instead assume we have a user who has read and enjoyed the “Cloud Atlas” book. In this case, we simply change the personalized set to that containing only “Cloud Atlas (Book)” and get the following rankings: 
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586507222660_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521545488_image.png)
 
 
 So, with no further intervention from our side, we now have a personalised top-three for this user: (1) “I Am Malala (Book)”, (2) “Cloud Atlas”, (3) “Catch Me If You Can”. 
