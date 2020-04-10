@@ -3,6 +3,10 @@
 
   align-items: center;
 
+  @media (min-width: 1000px) {
+    max-width: 70%;
+  }
+
   img {
     max-width: 80%;
     display: block;

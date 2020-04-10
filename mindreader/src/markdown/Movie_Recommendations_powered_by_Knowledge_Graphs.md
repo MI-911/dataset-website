@@ -61,7 +61,7 @@ In the graph in the figure, the most important web-page would be Wikipedia, foll
 In the PageRank model, we assume that the random web-surfer can teleport to any page in the entire network at any time. This is analogous to the surfer simply typing in a different URL in the browser instead of following the links on a page. In a variant called **Personalized PageRank**, we limit the target pages the surfer can teleport only to a specific set of graph nodes (this is called the preference set or the *personalized set* because they represent the pages a specific user likes the most). For example, if we “personalize” the PageRanks by only allowing the surfer to teleport to Medium, we get the following rankings: 
 
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521849923_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586523501284_image.png)
 
 
 Note that the random-surfer model makes no requirement for what the graph is modelling. In the end, what we obtain is a ranking of nodes in the graph according to their relevance and importance, regardless of what the nodes represent.
@@ -80,7 +80,7 @@ Another quite significant advantage of Personalized PageRank is that we can pers
 
 Running Personalized PageRank over the same graph with “I Am Malala” as the only source node, we get the following rankings:
 
-![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586521527115_image.png)
+![](https://paper-attachments.dropbox.com/s_3AC515575F42C08EA5E2D48214B83DB75DCC6B4DEF32496E2D4455B69BDA79EF_1586523010630_image.png)
 
 
 With that small change, we would now recommend that the user either watches “Catch Me If You Can” or reads “Cloud Atlas (Book)” instead of watching “Cloud Atlas”.
