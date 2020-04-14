@@ -17,7 +17,7 @@ const addCodeLanguage = (content) => {
   let isCodeBlock = false;
 
   for (let line of lines) {
-    if (/(    )/.test(line)) {
+    if (/( {4})/.test(line)) {
       if (!isCodeBlock) {
         isCodeBlock = true;
         processed.push("```cypher");
