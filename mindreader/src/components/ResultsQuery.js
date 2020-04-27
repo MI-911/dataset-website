@@ -34,7 +34,7 @@ class ResultsQuery extends React.Component {
     super(props);
     this.state = {
       data: {
-        labels: ['1', '2', '3', '4', '5'],
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
         datasets: []
       },
       experiment: 'default',
@@ -70,7 +70,7 @@ class ResultsQuery extends React.Component {
 
   getData() {
     axios
-      .get(`${API}/results/${this.state.experiment}/${this.state.metric}/${this.state.cutoff}`)
+      .get(`${API}/results/${this.state.experiment}/${this.state.metric}/${this.state.cutoff}?mean=yes`)
       .then(response => {
         this.setState(prevState => ({
           data: {
