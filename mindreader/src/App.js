@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Statistics from "./pages/Statistics";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import Blog from "./pages/Blog";
 import Results from "./pages/Results";
 
 function App() {
@@ -20,9 +19,6 @@ function App() {
           </Route>
           <Route path="/statistics">
             <Statistics />
-          </Route>
-          <Route path="/neo4j">
-            <Blog />
           </Route>
           <Route path="/results">
             <Results />

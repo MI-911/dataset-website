@@ -18,9 +18,6 @@ const Navigation = () => {
         <LinkContainer to="/statistics">
           <Nav.Link>Statistics</Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/neo4j">
-          <Nav.Link>Neo4j</Nav.Link>
-        </LinkContainer>
       </Nav>
     </Navbar>
   );
