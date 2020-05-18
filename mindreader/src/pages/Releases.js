@@ -35,14 +35,20 @@ const Releases = () => {
           (7,6 MB)
         </li>
         <li>
+          <BlankLink href="https://mindreader.tech/neo4j_graph.csv">
+            Full knowledge graph (for Neo4j)
+          </BlankLink>{" "}
+          (8.5 MB)
+        </li>
+        <li>
           <BlankLink href="https://mindreader.tech/api/triples?versions=100k,100k-newer,100k-fix">
-            Knowledge graph triples
+            Knowledge graph (triples only)
           </BlankLink>{" "}
           (16.0 MB)
         </li>
         <li>
           <BlankLink href="https://mindreader.tech/api/entities?versions=100k,100k-newer,100k-fix">
-            Knowledge graph entities
+            Knowledge graph (entities only)
           </BlankLink>{" "}
           (1.2 MB)
         </li>

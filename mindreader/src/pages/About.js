@@ -200,7 +200,7 @@ const About = () => {
         </Table>
       </Container>
 
-      <h4>Experiments</h4>
+      <h4>Code and experiments</h4>
       <hr />
       <p>
         We provide a framework for partitioning the dataset and performing
@@ -217,6 +217,10 @@ const About = () => {
       <p>
         Guidelines for referencing the dataset will be present prior to
         publication.
+      </p>
+
+      <p>
+        An extended edition of the white paper is available <BlankLink href="https://mindreader.tech/mindreader_extended.pdf">here</BlankLink>.
       </p>
       
       <h4>Acknowledgements</h4>
