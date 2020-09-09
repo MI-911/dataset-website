@@ -12,7 +12,7 @@ const About = () => {
       <p>
         MindReader is a novel dataset providing explicit user ratings over a
         knowledge graph within the movie domain. The latest stable version of
-        the dataset contains 102,160 ratings from 1,174 users over 10,030
+        the dataset contains 218,794 ratings from 2,316 users over 12,206 entities
         entities, and an associated knowledge graph consisting of 18,133
         movie-related entities. The dataset is collected from an online movie
         recommendation game,{" "}
@@ -28,6 +28,17 @@ const About = () => {
           <button className="mr-btn mr-btn-lg">Download</button>
         </Link>
       </div>
+
+      <h4>Reference</h4>
+      <hr />
+      <p>
+        Guidelines for referencing the dataset will be present prior to
+        publication.
+      </p>
+
+      <p>
+        An extended edition of the white paper is available <BlankLink href="https://mindreader.tech/mindreader_extended.pdf">here</BlankLink>.
+      </p>
 
       <h4>Releases</h4>
       <hr />
@@ -210,17 +221,6 @@ const About = () => {
         </BlankLink>
         . Further instructions on partitioning the dataset and conducting the
         experiments are available in the repository.
-      </p>
-
-      <h4>Reference</h4>
-      <hr />
-      <p>
-        Guidelines for referencing the dataset will be present prior to
-        publication.
-      </p>
-
-      <p>
-        An extended edition of the white paper is available <BlankLink href="https://mindreader.tech/mindreader_extended.pdf">here</BlankLink>.
       </p>
       
       <h4>Acknowledgements</h4>
