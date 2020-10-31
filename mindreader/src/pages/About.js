@@ -236,8 +236,12 @@ const About = () => {
 
       <h5>Full Knowledge Graph</h5>
       <hr/>
-      <p>The neo4j graph is export to GraphML. We refer to <BlankLink href="https://neo4j.com/labs/apoc/4.1/import/graphml/">Neo4j's guide</BlankLink>, but it is possible to import the graph using:</p>
-      <code>CALL apoc.import.graphml("neo4j.graphml", {readLabels: True})</code>
+      <p>The Neo4j graph is exported to GraphML. We refer to <BlankLink href="https://neo4j.com/labs/apoc/4.1/import/graphml/">Neo4j's guide</BlankLink>, but it is possible to import the graph using:</p>
+          <pre>
+            <code>
+              {`   CALL apoc.import.graphml("neo4j.graphml", {readLabels: True})`}
+              </code>
+          </pre>
 
       <h4>Code and experiments</h4>
       <hr />
