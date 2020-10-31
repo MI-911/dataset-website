@@ -60,7 +60,7 @@ const About = () => {
       </p>
 
       <p>
-        An extended edition of the white paper is available <BlankLink href="https://mindreader.tech/mindreader_extended.pdf">here</BlankLink>.
+        The paper is available <BlankLink href="https://doi.org/10.1145/3340531.3412759">here</BlankLink> and the an extended edition is available <BlankLink href="https://mindreader.tech/mindreader_extended.pdf">here</BlankLink>.
       </p>
 
       <h4>Releases</h4>
