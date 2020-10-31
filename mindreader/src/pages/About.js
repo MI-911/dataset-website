@@ -32,8 +32,31 @@ const About = () => {
       <h4>Reference</h4>
       <hr />
       <p>
-        Guidelines for referencing the dataset will be present prior to
-        publication.
+        Please use the following information when citing our work: 
+        <pre>
+          <code>
+            {
+              `
+              @inproceedings{{10.1145/3340531.3412759,
+                author = {Brams, Anders H. and Jakobsen, Anders L. and Jendal, Theis E. and Lissandrini, Matteo and Dolog, Peter and Hose, Katja},
+                title = {MindReader: Recommendation over Knowledge Graph Entities with Explicit User Ratings},
+                year = {2020},
+                isbn = {9781450368599},
+                publisher = {Association for Computing Machinery},
+                address = {New York, NY, USA},
+                url = {https://doi.org/10.1145/3340531.3412759},
+                doi = {10.1145/3340531.3412759},
+                booktitle = {Proceedings of the 29th ACM International Conference on Information & Knowledge Management},
+                pages = {2975–2982},
+                numpages = {8},
+                keywords = {recommender systems, content-based filtering, dataset, collaborative filtering, knowledge graph},
+                location = {Virtual Event, Ireland},
+                series = {CIKM '20}
+              }
+              `
+            }
+          </code>
+        </pre>
       </p>
 
       <p>
