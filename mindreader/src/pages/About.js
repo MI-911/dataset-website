@@ -258,7 +258,7 @@ const About = () => {
       <h4>Acknowledgements</h4>
       <hr />
       <p>
-        MindReader was developed by <BlankLink href="https://abrams.dk/">Anders Højlund Brams</BlankLink>, <BlankLink href="https://anderslangballe.dk/">Anders Langballe Jakobsen</BlankLink>, Theis Erik Jendal, <BlankLink href="http://people.cs.aau.dk/~khose/">Katja Hose</BlankLink>, <BlankLink href="http://people.cs.aau.dk/~matteo/">Matteo Lissandrini</BlankLink>, and <BlankLink href="https://peterdolog.wordpress.com/">Peter Dolog</BlankLink> at <BlankLink href="https://www.cs.aau.dk/">Aalborg University</BlankLink>.
+        MindReader was developed by <BlankLink href="https://abrams.dk/">Anders Højlund Brams</BlankLink>, <BlankLink href="https://anderslangballe.dk/">Anders Langballe Jakobsen</BlankLink>, <BlankLink href="https://vbn.aau.dk/da/persons/141501">Theis Erik Jendal</BlankLink>, <BlankLink href="http://people.cs.aau.dk/~khose/">Katja Hose</BlankLink>, <BlankLink href="http://people.cs.aau.dk/~matteo/">Matteo Lissandrini</BlankLink>, and <BlankLink href="https://peterdolog.wordpress.com/">Peter Dolog</BlankLink> at <BlankLink href="https://www.cs.aau.dk/">Aalborg University</BlankLink>.
         We would like to thank all users of MindReader for contributing to the dataset.
       </p>
     </>
