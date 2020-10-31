@@ -32,7 +32,7 @@ const Releases = () => {
           </BlankLink>
         </li>
         <li>
-          <BlankLink href="https://mindreader.tech/neo4j_graph.csv">
+          <BlankLink href="https://mindreader.tech/neo4j.graphml">
             Full knowledge graph (for Neo4j)
           </BlankLink>{" "}
           (8.5 MB)
