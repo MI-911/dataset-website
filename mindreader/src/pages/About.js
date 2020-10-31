@@ -76,7 +76,7 @@ const About = () => {
       <h4>Structure</h4>
       <hr />
       <p>
-        All dataset files are provided as related CSV files. The structure of
+        All dataset files are provided as related CSV files, except for the Neo4j knowledge graph definition, which is in <code>.graphml</code> format. The structure of
         each file is described in detail below.
       </p>
 
