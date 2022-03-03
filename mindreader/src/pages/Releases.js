@@ -22,12 +22,12 @@ const Releases = () => {
       </p>
       <ul>
         <li>
-          <BlankLink href="https://mindreader.tech/api/statistics?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch">
+          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch">
             Ratings
           </BlankLink>
         </li>
         <li>
-          <BlankLink href="https://mindreader.tech/api/statistics?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch&final=yes">
+          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch&final=yes">
             Ratings (final only)
           </BlankLink>
         </li>
