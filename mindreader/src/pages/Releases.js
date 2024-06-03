@@ -53,7 +53,7 @@ const Releases = () => {
       <hr />
 
       <h4>MindReader-200K</h4>
-      <p className="small text-muted">Released 2020-02-25</p>
+      <p className="small text-muted">Released 2020-09-09</p>
       <p>
         Contains 218,794 ratings from 2,316 users over 12,206 entities.
       </p>
