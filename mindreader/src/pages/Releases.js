@@ -10,11 +10,11 @@ const Releases = () => {
         Statistics on the latest available release are available{" "}
         <Link to="/statistics">here</Link>.
       </p>
-      <h4>MindReader-200K</h4>
-      <p className="small text-muted">Released 2020-09-09</p>
+      <h4>MindReader-300K</h4>
+      <p className="small text-muted">Released 2024-06-03</p>
       <p>
-        The latest stable release of MindReader containing 218,794 ratings from 2,316 users
-        over 12,206 entities. We recommend this dataset for use in research, as it will be
+        The latest stable release of MindReader containing 310,273 ratings from 3,408 users
+        over 13,286 entities. We recommend this dataset for use in research, as it will be
         permanently available on this page. Furthermore, we provide a variant containing only
         ratings from users who reached the final page of the quiz denoted by 'final only'.
         Links to download the dataset and associated knowledge graph triples can
@@ -22,12 +22,12 @@ const Releases = () => {
       </p>
       <ul>
         <li>
-          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch">
+          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch,september-2020">
             Ratings
           </BlankLink>
         </li>
         <li>
-          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch&final=yes">
+          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch,september-2020&final=yes">
             Ratings (final only)
           </BlankLink>
         </li>
@@ -52,6 +52,27 @@ const Releases = () => {
       </ul>
       <hr />
 
+      <h4>MindReader-200K</h4>
+      <p className="small text-muted">Released 2020-09-09</p>
+      <p>
+        Contains 218,794 ratings from 2,316 users over 12,206 entities.
+      </p>
+      <ul>
+        <li>
+          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch">
+            Ratings
+          </BlankLink>{" "}
+          (8,6 MB)
+        </li>
+        <li>
+          <BlankLink href="https://mindreader.tech/api/ratings?versions=100k,100k-newer,100k-fix,thesis,thesis-ppr,thesis-launch&final=yes">
+            Ratings (final only)
+          </BlankLink>{" "}
+          (7,6 MB)
+        </li>
+      </ul>
+      <hr />
+          
       <h4>MindReader-100K</h4>
       <p className="small text-muted">Released 2020-02-25</p>
       <p>
